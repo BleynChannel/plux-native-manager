@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use native_manager::NativePluginManager;
+use plux_native_manager::NativePluginManager;
 use plux::{function::FunctionOutput, Loader, StdInfo};
 
 pub fn loader_init<'a>() -> Loader<'a, FunctionOutput, StdInfo> {
@@ -14,5 +14,5 @@ pub fn loader_init<'a>() -> Loader<'a, FunctionOutput, StdInfo> {
 pub fn get_plugin_path(id: &str, version: &str) -> PathBuf {
     std::env::current_dir()
         .unwrap()
-        .join(format!("../../../plugins/{id}/build/{id}-v{version}.npl"))
+        .join(format!("./plugins/{id}/build/{id}-v{version}.npl"))
 }

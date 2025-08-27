@@ -4,7 +4,7 @@ mod utils;
 mod main {
     use crate::utils::{get_plugin_path, loader_init};
     use plux::Manager;
-    use native_manager::NativePluginManager;
+    use plux_native_manager::NativePluginManager;
 
     #[test]
     fn load_manager() {
