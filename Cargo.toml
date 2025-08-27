@@ -1,0 +1,24 @@
+[package]
+name = "plux-native-manager"
+version = "0.1.0"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+plux-native-manager-codegen = { path = "codegen", optional = true }
+libloading = "0.8.8"
+semver = "1.0.26"
+serde = "1.0.219"
+thiserror = "2.0.16"
+toml = "0.9.5"
+
+[dependencies.plux]
+git = "https://github.com/BleynChannel/plux-rs.git"
+branch = "master"
+
+[dev-dependencies]
+plux-native-manager-codegen = { path = "codegen" }
+
+[features]
+derive = ["dep:plux-native-manager-codegen"]
