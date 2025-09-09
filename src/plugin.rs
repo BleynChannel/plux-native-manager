@@ -1,4 +1,4 @@
-use plux::{Bundle, StdInfo};
+use plux_rs::{Bundle, StdInfo};
 use libloading::Library;
 
 use crate::NativeConfig;

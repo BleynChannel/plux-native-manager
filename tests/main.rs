@@ -3,7 +3,7 @@ mod utils;
 #[cfg(test)]
 mod main {
     use crate::utils::{get_plugin_path, loader_init};
-    use plux::Manager;
+    use plux_rs::Manager;
     use plux_native_manager::NativePluginManager;
 
     #[test]

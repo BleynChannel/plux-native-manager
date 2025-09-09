@@ -72,23 +72,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "plux"
-version = "1.0.0-alpha.3"
-source = "git+https://github.com/BleynChannel/plux-rs.git?branch=master#640d506d73111cb38cac279296822775c3850212"
-dependencies = [
- "rayon",
- "semver",
- "serde",
- "thiserror",
-]
-
-[[package]]
 name = "plux-native-manager"
 version = "0.1.0"
 dependencies = [
  "libloading",
- "plux",
  "plux-native-manager-codegen",
+ "plux-rs",
  "semver",
  "serde",
  "thiserror",
@@ -102,6 +91,18 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "plux-rs"
+version = "1.0.0-pre.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5df41d464a08fdcbb1d7cad80b858c34ae11e9e19ca01ca665885d8cbb54103f"
+dependencies = [
+ "rayon",
+ "semver",
+ "serde",
+ "thiserror",
 ]
 
 [[package]]

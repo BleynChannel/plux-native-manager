@@ -1,6 +1,6 @@
 use std::{marker::PhantomData, sync::Arc};
 
-use plux::{
+use plux_rs::{
     function::{Arg, Function, FunctionOutput},
     variable::Variable,
 };

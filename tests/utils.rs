@@ -1,7 +1,7 @@
 use std::path::PathBuf;
 
 use plux_native_manager::NativePluginManager;
-use plux::{function::FunctionOutput, Loader, StdInfo};
+use plux_rs::{function::FunctionOutput, Loader, StdInfo};
 
 pub fn loader_init<'a>() -> Loader<'a, FunctionOutput, StdInfo> {
     let mut loader = Loader::new();

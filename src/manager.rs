@@ -1,7 +1,7 @@
 use std::env::consts::OS;
 
 use crate::{config::NativeConfig, NativeFunction, Plugin};
-use plux::{
+use plux_rs::{
     context::LoadPluginContext, function::Request, utils::ManagerResult, Api, Bundle, Depend,
     Manager, Plugin as StdPlugin, RegisterPluginContext, Requests, StdInfo,
 };
